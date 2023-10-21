@@ -1,0 +1,10 @@
+@font-face {
+  font-family: "Roboto";
+  src: url(../../fonts/Noto_Sans_Osmanya/NotoSansOsmanya-Regular.ttf) format(truetype);
+}
+h3 {
+  color: #9356DC;
+  font-family: "Roboto";
+}
+
+/*# sourceMappingURL=style.css.map */
