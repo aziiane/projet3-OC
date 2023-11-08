@@ -1,0 +1,83 @@
+main{
+    .main-info{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        padding: 15px 30px;
+        gap: 5pxz;
+        h1{margin: 0;}
+        p{font-size: 13px; font-weight: 300;}
+        a{
+            background: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
+            padding: 13px 18px;
+            color:white;
+            border-radius: 25px;
+            text-decoration: none;
+        }
+
+    }
+    .main-fonctionnement{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px;
+        background-color: white;
+        .fonctionnement-text{
+            font-weight: 700;
+        }
+        .fonctionnement-buttons{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            a{
+                display: flex;
+                flex-direction: row;
+                gap: 20px;
+                box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+                background-color: $background;
+                padding: 25px;
+                color:black;
+                border-radius: 20px;
+                text-decoration: none;
+                &:hover i{
+                    color:$primary;
+                }
+            }
+        }
+    }
+    #main-restaurants{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px;
+        .restaurant-card{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            overflow: hidden;
+            border-radius: 15px;
+            img{
+                aspect-ratio: 16/7;
+                object-fit: cover;
+
+            }
+            .card-lower{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                width: 100%;
+                background-color: white;
+                justify-content: space-between;
+                padding: 15px 30px 15px 20px;
+                box-sizing: border-box;
+                h3{margin:0;}
+                p{margin: 0;font-size: 17px;font-weight: 300;}
+                i{font-size: 20px;}
+                .card-text{
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+}

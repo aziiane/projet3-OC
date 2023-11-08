@@ -4,11 +4,15 @@
 
 //PAGES IMPORT
 @import "../pages/index.scss";
+@import "../pages/restaurant.scss";
 
 //COMPONENTS IMPORT
+@import "../components/header.scss";
+@import "../components/footer.scss";
 
-
-h3{
-    color: $primary;
-    font-family: 'Roboto';
+*{font-family: roboto;}
+img{max-width: 100%;}
+body{
+    margin:0;
+    background:$background;
 }

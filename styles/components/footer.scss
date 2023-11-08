@@ -1,0 +1,23 @@
+footer{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-color: $grey;
+    gap: 5px;
+    padding: 15px;
+    h2{
+        font-family: Shrikhand;
+    }
+    .footer-links{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        a{
+            color: white;
+            text-decoration: none;
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+        }
+    }
+}
