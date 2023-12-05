@@ -4,10 +4,10 @@ main{
         flex-direction: column;
         text-align: center;
         align-items: center;
-        padding: 15px 30px;
+        padding: 15px 45px;
         gap: 5pxz;
         h1{margin: 0;}
-        p{font-size: 13px; font-weight: 300;}
+        p{font-size: 16px; font-weight: 300;}
         
 
     }
@@ -17,6 +17,7 @@ main{
         gap: 10px;
         padding: 20px;
         background-color: white;
+        margin-bottom: 40px;
         .fonctionnement-text{
             font-weight: 700;
         }
@@ -24,10 +25,13 @@ main{
             display: flex;
             flex-direction: column;
             gap: 15px;
+            padding-left: 10px;
+            margin-bottom: 50px;
             a{
                 display: flex;
                 flex-direction: row;
                 gap: 20px;
+                position: relative;
                 box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
                 background-color: $background;
                 padding: 25px;
@@ -37,15 +41,32 @@ main{
                 &:hover i{
                     color:$primary;
                 }
+                .num{
+                    position: absolute;
+                    left: 0;
+                    top: 50%;
+                    background: #9356DC;
+                    color:white;
+                    border-radius: 50%;
+                    width: 24px;
+                    height: 24px;
+                    transform: translate(-50%, -50%);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
             }
         }
-        @media screen and (min-width: 768px) {
-            align-content: space-around;
-            flex-wrap: wrap;
-            padding: 50px 0;
+        @media screen and (min-width: 1200px) {
+            padding: 50px 180px;
             .fonctionnement-buttons{
                 flex-direction: row;
-                justify-content: center;
+                justify-content: space-between;
+                width: 100%;
+                gap: 30px;
+                a{
+                    width: 100%;
+                }
             }
         }
     }
@@ -54,6 +75,7 @@ main{
         flex-direction: column;
         gap: 10px;
         padding: 20px;
+        margin-bottom: 46px;
         a{
             text-decoration: none;
             color: black;
@@ -68,6 +90,17 @@ main{
             width: 100%;
             overflow: hidden;
             border-radius: 15px;
+            position: relative;
+            .new{
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                background-color: rgba(153, 226, 208, 1);
+                color: rgba(0, 135, 102, 1);
+                border-radius: 2px;
+                box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+                padding: 5px 10px;
+            }
             img{
                 aspect-ratio: 16/7;
                 object-fit: cover;
@@ -82,9 +115,34 @@ main{
                 justify-content: space-between;
                 padding: 15px 30px 15px 20px;
                 box-sizing: border-box;
+                position: relative;
                 h3{margin:0;}
                 p{margin: 0;font-size: 17px;font-weight: 300;}
-                i{font-size: 20px;}
+                .like{
+                    position: relative;
+                    width: 23px;
+                    height: 23px;
+                }
+                .heart{
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    transition: opacity 150ms linear;
+                    cursor: pointer;
+                }
+                .heart-empty{
+                    opacity: 1;
+                }
+                .heart-full{
+                    opacity: 0;
+                }
+                .checkbox{display: none;}
+                .checkbox:checked ~ .like .heart-empty{
+                    opacity: 0;
+                }
+                .checkbox:checked ~ .like .heart-full{
+                    opacity: 1;
+                }
                 .card-text{
                     flex-direction: column;
                 }
@@ -92,6 +150,7 @@ main{
         }
         }
         @media screen and (min-width: 768px) {
+            padding: 20px ;
             #restaurant-cards-list{
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
@@ -99,6 +158,9 @@ main{
                 row-gap: 50px;
                 column-gap: 100px;
             }
+        }
+        @media screen and (min-width: 1200px) {
+            padding: 50px 180px;
         }
     }
 }

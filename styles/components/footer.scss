@@ -7,6 +7,7 @@ footer{
     padding: 30px 25px;
     h2{
         font-family: Shrikhand;    
+        font-size: 1rem;
     }
     .footer-links{
         display: flex;
@@ -25,13 +26,14 @@ footer{
             gap: 10px;
         }
     }
-    @media screen and (min-width: 768px){
+    @media screen and (min-width: 1200px){
         height: 27px;
         gap: 16px;
         flex-direction: row-reverse;
         align-items: end;
         justify-content: end;
         h2{
+            width: 137px;
             margin: 0;
             line-height: 1;
         }
