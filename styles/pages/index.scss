@@ -118,31 +118,7 @@ main{
                 position: relative;
                 h3{margin:0;}
                 p{margin: 0;font-size: 17px;font-weight: 300;}
-                .like{
-                    position: relative;
-                    width: 23px;
-                    height: 23px;
-                }
-                .heart{
-                    position: absolute;
-                    bottom: 0;
-                    left: 0;
-                    transition: opacity 150ms linear;
-                    cursor: pointer;
-                }
-                .heart-empty{
-                    opacity: 1;
-                }
-                .heart-full{
-                    opacity: 0;
-                }
-                .checkbox{display: none;}
-                .checkbox:checked ~ .like .heart-empty{
-                    opacity: 0;
-                }
-                .checkbox:checked ~ .like .heart-full{
-                    opacity: 1;
-                }
+                
                 .card-text{
                     flex-direction: column;
                 }
