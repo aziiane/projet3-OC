@@ -250,47 +250,61 @@ main #main-restaurants #restaurant-cards-list .restaurant-card .card-lower .card
   width: 40px;
 }
 #restaurant #container .food-selection .plate {
-  display: flex;
+  background-color: white;
   border-radius: 15px;
+  display: flex;
+  flex-direction: row;
   overflow: hidden;
 }
-#restaurant #container .food-selection .plate .food-selector {
+#restaurant #container .food-selection .plate .dish-title {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: white;
-  padding: 15px;
-  width: 100%;
-}
-#restaurant #container .food-selection .plate .food-selector .dish-title {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 5px;
-  width: inherit;
-}
-#restaurant #container .food-selection .plate .food-selector .dish-title p:first-child {
+  width: auto;
+  flex: 1;
+  padding: 10px;
+  padding-right: 0;
   white-space: nowrap;
   text-overflow: ellipsis;
-  text-wrap: nowrap;
   overflow: hidden;
 }
-#restaurant #container .food-selection .plate .selected {
-  background-color: #99E2D0;
-  color: white;
+#restaurant #container .food-selection .plate .dish-title h3, #restaurant #container .food-selection .plate .dish-title p {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+#restaurant #container .food-selection .plate .dish-title h3 {
+  font-weight: 500;
+  font-size: 18px;
+}
+#restaurant #container .food-selection .plate .dish-title p {
+  font-size: 15px;
+  font-weight: 300;
+}
+#restaurant #container .food-selection .plate .dish-price {
   display: flex;
-  align-items: center;
   justify-content: center;
-  width: 0%;
-  transition: width 0.25s ease-in-out;
-  font-size: 23px;
+  align-items: end;
+  padding: 10px 0;
+  margin-right: 10px;
+  font-weight: 700;
+  font-size: 15px;
+}
+#restaurant #container .food-selection .plate .selected {
+  width: 4.3em;
+  margin-right: -4.3em;
+  background-color: #99E2D0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-duration: 0.3s;
+}
+#restaurant #container .food-selection .plate .selected i {
+  font-size: 1.6rem;
+  color: white;
 }
 #restaurant #container .food-selection .plate .checkbox:checked ~ .selected {
-  width: 80px;
-}
-#restaurant #container .food-selection .plate .checkbox:checked ~ .food-selector {
-  width: 90%;
-  background: red !important;
+  margin: 0;
 }
 #restaurant #container .btn-order {
   max-width: 186px;
