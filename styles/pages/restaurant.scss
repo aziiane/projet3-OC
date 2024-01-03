@@ -81,50 +81,6 @@
                     width: 40px;
                 }
             }
-            // .plate{
-            //     display: flex;
-            //     border-radius: 15px;
-            //     overflow: hidden;
-            //     box-sizing: border-box;
-            //     .food-selector{
-            //         display: flex;
-            //         flex-direction: column;
-            //         justify-content: space-between;
-            //         background-color: white;
-            //         padding: 15px;
-            //         width: 100%;
-            //         .dish-title{
-            //             display: flex;
-            //             flex-direction:row;
-            //             justify-content: space-between;
-            //             gap: 5px;
-            //             width: inherit;
-            //             p:first-child{
-            //                 white-space: nowrap;
-            //                 text-overflow: ellipsis;
-            //                 text-wrap: nowrap;
-            //                 overflow: hidden;
-            //             }
-            //         }
-            //     }
-            //     .selected{
-            //         background-color: #99E2D0;
-            //         color: white;
-            //         display: flex;
-            //         align-items: center;
-            //         justify-content: center;
-            //         width: 0%;
-            //         transition: width 0.25s ease-in-out;
-            //         font-size: 23px;
-            //     }
-            //     .checkbox:checked ~ .selected{
-            //         width: 80px;
-            //     }
-            //     .checkbox:checked + .food-selector{
-            //         width: 90%;
-            //         background: blue!important;
-            //     }
-            // }
             .plate{
                 background-color: white;
                 border-radius: 15px;

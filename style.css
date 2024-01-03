@@ -508,6 +508,14 @@ footer .footer-links a:has(i) {
 }
 
 .like {
+  position: absolute;
+  bottom: 25px;
+  right: 25px;
+  width: 23px;
+  height: 23px;
+}
+
+.title-like {
   position: relative;
   width: 23px;
   height: 23px;
